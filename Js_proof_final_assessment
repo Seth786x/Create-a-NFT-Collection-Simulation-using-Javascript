@@ -1,7 +1,7 @@
 
 const nftCollection = [];
 
-
+// Create the mintNFT function
 function mintNFT(name, eyeColor, shirtType, bling) {
   const nft = {
     name: name,
@@ -12,7 +12,7 @@ function mintNFT(name, eyeColor, shirtType, bling) {
   nftCollection.push(nft);
 }
 
-
+// Create the listNFTs function
 function listNFTs() {
   for (let i = 0; i < nftCollection.length; i++) {
     console.log("NFT " + (i + 1) + ":");
@@ -24,12 +24,12 @@ function listNFTs() {
   }
 }
 
-
+// Create the getTotalSupply function
 function getTotalSupply() {
   return nftCollection.length;
 }
 
-
+// Call your functions to test the implementation
 mintNFT("Cool Cat", "Blue", "Hoodie", "Gold Chain");
 mintNFT("Hip Dog", "Brown", "T-Shirt", "Diamond Stud");
 mintNFT("Funky Monkey", "Green", "Tank Top", "Silver Ring");
