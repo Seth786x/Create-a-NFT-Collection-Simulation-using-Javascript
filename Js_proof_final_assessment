@@ -1,4 +1,4 @@
-
+// Create an Array for storing nfts
 const nftCollection = [];
 
 // Create the mintNFT function
